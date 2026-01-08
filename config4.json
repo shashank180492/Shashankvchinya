@@ -1,0 +1,42 @@
+{
+  "file_paths": {
+    "dbc": "D:\\HIL simulation\\Input data\\DBC\\DBC_Gen2_V1_6.dbc",
+    "input_excel": "D:\\HIL simulation\\Input data\\Cycle\\my_data_short.xlsx",
+    "output_directory": "D:\\HIL simulation\\Output"
+  },
+
+  "hardware": {
+    "bms_channel": "PCAN_USBBUS1",
+    "vcu_channel": "PCAN_USBBUS2",
+    "bitrate": 500000
+  },
+
+  "gateway": {
+    "injection_message": "BatteryParameters",
+    "injection_signal": "Battery_Current"
+  },
+
+  "replay": {
+    "messages_to_simulate": [
+      "MotorStatus_1",
+      "MotorStatus_2",
+      "MotorStatus_3",
+      "Charger_Status",
+      "Display_Info",
+      "Ride_Metric_1",
+      "Ride_Metric_2",
+      "Rear_Bps",
+      "Front_Bps",
+      "Mode_Odo"
+    ],
+    "target_response_list": [
+      "VCU_Display_Info1",
+      "VCU_Display_Info2",
+      "VCU_Display_Info3",
+      "VCU_Status",
+      "VehicleCurrentLimits",
+      "STA_Authentication_status",
+      "STA_VehicleModeStatus"
+    ]
+  }
+}
